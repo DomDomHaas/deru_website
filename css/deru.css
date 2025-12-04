@@ -1,0 +1,577 @@
+/* Navigation */ 
+/* Overwrite Bootstrap navbar */
+
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner{
+    padding: 0;
+}
+
+.nav{
+    width: 100%;
+}
+
+.navbar .nav{
+    float: none;
+}
+
+.navbar-inner
+{
+    background-color: #fff;
+    background-image: none;
+}
+
+.nav > li,
+.navbar .nav > li{
+    display: inline-block;
+    float: none;
+    margin: 0 7%;
+    font-size: 20px;
+}
+
+.nav > div > ul > li,
+.navbar .nav > li > a{
+    color: #333;
+}
+
+.nav > div > ul > li,
+.navbar .nav > li > a:hover{
+    color: #00b5a9;
+}
+
+.nav .site_loading{
+    width: 16px;
+}
+
+.nav .site_ready{
+    display: none
+}
+
+.site_loaded,
+.site_loading {
+    position: relative;
+    bottom: 3px;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner
+{ 
+    box-shadow: none
+}
+
+.pure-menu-disabled, .pure-menu-heading, .pure-menu-link {
+    padding: .4em 0.5em !important;
+}
+
+.widget iframe {
+    max-width: 100%;
+}
+.widget img {
+    max-width: 100%;
+}
+
+/* Common */
+html, body {	
+	font-size:15px;
+	font-family:"Quicksand" !important;
+    font-weight: 700;
+	
+    color:#333;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+	margin:0;
+	padding:0;    
+}
+
+h1, h2, h3, h4 {
+	font-family:"Quicksand" !important;
+    font-weight: 700;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0;
+    text-align: center;    
+}
+
+section {
+    margin: 5% auto;
+}
+
+section.info_version{
+    padding: 2.5% 0 0 0;
+}
+
+.background_image,
+.background_image img{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* background animations */
+
+/*
+@keyframes cf4FadeInOut {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    33% {
+        opacity:0;
+    }
+    83% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+#cf4a img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#cf4a img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+
+
+#cf4a img {
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+}
+ */
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity:0;
+    }
+    25% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    75% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+#cf .top {
+    opacity: 0;
+    display: inherit;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+.top_loading{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+/* Section specific */ 
+
+.screenshots {
+    position: relative;
+}
+
+.info_game p,
+.info_version p{
+    font-size: 25px;
+    line-height: 1.25em;
+    font-weight: 700;
+    padding: 0 3.5%;
+}
+
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00b5a9;
+    text-decoration: none;
+}
+
+
+.logo > img{
+    /* max-width: 850px; */
+    max-width: 512px;
+}
+
+
+section.awards {
+    max-width: 600px;
+}
+
+.awards > a > img{
+    margin: 2% 1%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 clear;    
+}
+
+.awards > a > img:hover{
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 50%;
+}
+
+
+
+.trailer_wrapper,
+.trailer_wrapper_big{
+    /* default don't show enable in mediaqueries 
+    display: none;    
+    */
+    
+    width: 852px;
+    max-width: 100%;    
+    height: 479px;
+    
+    /* overflow: hidden; */
+	margin: auto;
+    text-align: center;
+}
+
+
+.trailer_wrapper_mid{
+    
+    /* default don't show enable in mediaqueries */
+    display: none;
+    
+    width: 560px;
+    height: 315px;    
+    max-width: 100%;
+    
+    /* overflow: hidden; */
+	margin: auto;
+    text-align: center;
+    
+    border: 5px solid white;    
+}
+
+.trailer_desc{
+    margin: 1% auto;
+    font-size: 12px;
+    padding: 0;
+}
+
+
+
+.footer {
+    display: table;
+    column-count: 8;
+    margin: 3% auto 3%;
+    text-align: center;
+    padding: 0;
+    font-weight: 700;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.icon_link_inkkit a,
+.icon_link_whales a {
+    background-color: none;
+}
+
+.icon_links a{
+    margin: auto;
+    padding: 15px;
+    border: none;
+    width: 30px;
+}
+
+.icon_links > a.fa{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-decoration:none;
+    background-color: #333;
+    color: #fff;
+}
+
+.icon_links > a.fa:hover{
+    border: none;
+    background-color: #111;
+    box-shadow: 0 0 5px 0 white;
+}
+
+
+.icon_link_inkkit,
+.icon_link_whales {
+    margin: 3% 0 0 0;
+}
+
+.icon_link_inkkit a img,
+.icon_link_whales a img{
+    margin: -10% 0 0 0;
+    max-width: 200px;
+}
+
+
+.contact_email,
+.contact_twitter,
+.contact_music,
+.contact_fb,
+.whales_logo {
+    display: table-cell;
+    padding: 0 0 7.5% 0;
+    margin: 0;
+    width: 9%;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.icon_links {
+    display: table-cell;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.icon_links p {
+    margin: 5% auto;
+}
+
+signup_text > p{
+    margin: 2.5% auto;
+}
+
+.signup > p{
+    margin: 1% auto;
+}
+
+.icon_links > p,
+.signup > p {
+    color: #fff;
+}
+
+.contact_email + div.icon_links p{
+    font-size: 10px;
+}
+
+.whales_logo,
+.inkkit_logo {
+    display: table-cell;
+    margin: 0;
+    padding: 7.5% 0;
+    /*
+    position: relative;    
+    left: 35%;
+    */
+    width: 0;
+}
+
+.inkkit_logo a,
+.whales_logo a,
+.whales_logo a:hover{
+    background: none;
+    background-color: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 white;
+}
+
+.inkkit_logo a img{
+    max-width: 256px;
+}
+
+.whales_logo a img{
+    max-width: 150px;
+}
+
+.whales_logo a img:hover{
+    box-shadow: 0 0 5px 0 white;
+}
+
+/*** Mailchimp override ***/
+
+.mc-field-group .button{
+    margin-bottom: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+
+.mc-field-group .required.email{
+    font-family: "Quicksand";
+}
+
+/**** mobile breaks title and background ****/
+
+
+@media screen and (max-width: 1024px) {
+    
+    .navbar-fixed-top, .navbar-fixed-bottom{
+        position: fixed;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    .trailer_wrapper{
+        border: 5px solid white;
+        /* only 98% because of the border */
+        max-width: 98%;
+    }
+
+    .trailer_wrapper,
+    .trailer_wrapper > iframe{
+        width: 560px;
+        height: 315px;    
+    }    
+    
+    .trailer_wrapper > iframe{
+        max-width: 100%;
+    }
+    
+    .logo{
+        margin: 12% auto -1%;
+    }
+    
+    body{
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px){
+    
+    .trailer_wrapper{
+        border: 10px solid white;
+    }
+    
+    .trailer_wrapper,
+    .trailer_wrapper > iframe{
+        width: 852px;
+        max-width: 100%;    
+        height: 479px;
+    }
+
+    .logo{
+        margin: 10% auto 0%;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    
+    .contact_email,
+    .contact_twitter,
+    .contact_music,
+    .contact_fb{
+        padding: 10% 0;
+    }    
+}
+
+/**** different footer for mobile devices ****/
+
+/* @media screen and (min-width: 320px) and (max-width: 767px) { */
+@media screen and (max-width: 767px) {
+
+
+    .gamedesc_bot{
+        margin: 10% auto 20%;
+    }    
+
+    .footer{
+        margin: 2.5% auto 2.5%;
+    }
+    
+    .icon_links {
+        display: inline-block;
+        width: 25%;
+        margin: 5%;
+    }
+    
+    .contact_email p,
+    .contact_twitter p,
+    .contact_music p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .whales_logo{
+        margin: 0;
+        padding: 7.5% 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+        
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .trailer_wrapper{
+        max-width: 97%;
+    }
+    
+    .nav > li,
+    .navbar .nav > li{
+        margin: 0 3.5%;
+    }
+    
+    .icon_links {
+        padding: 0;
+        margin: 5% 7.5%;
+    }
+    
+    .logo{
+        margin: 20% auto 6%;
+    }
+    
+    .logo > img{
+        max-width: 300px;
+    }
+    
+    .contact_email,
+    .contact_twitter,
+    .contact_music,
+    .contact_fb{
+        padding: 0 0 25% 0;
+    }
+    
+    /* .awards > a > img{
+        width: 80px;
+    } */
+    
+    .info_game p,
+    .info_version p{
+        font-size: 21px;
+        line-height: 1em;
+        padding: 0 5.5%;
+    }
+    
+}
+

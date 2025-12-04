@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="DERU an atmospheric, cooperative Puzzle Game">
+    <meta property="og:image" content="img/deru_icon.jpg">
+    <meta property="og:description" content="DERU an atmospheric puzzle game which challenges two players to work together and play through many colorful levels.">
+
+    <meta name="author" content="Ink Kit">
+    <meta name="publisher" content="Ink Kit">
+    <meta name="description" content="DERU an atmospheric puzzle game which challenges two players to work together and play through many colorful levels.">
+    <meta name="keywords" content="abstract, deru, puzzle, game, 2D, casual, multiplayer">
+    <meta name="page-topic" content="Game">
+    <meta name="page-type" content="Software">
+    <meta name="audience" content="Anfänger, Azubis, Fans, Fortgeschrittene, Frauen, Jugendliche, Kinder, Männer, Schüler, Studenten">
+    <meta name="robots" content="index, follow">
+    <meta name="DC.Creator" content="Ink Kit">
+    <meta name="DC.Publisher" content="Ink Kit">
+    <meta name="DC.Rights" content="Ink Kit">
+    <meta name="DC.Description" content="DERU an atmospheric puzzle game which challenges two players to work together and play through many colorful levels.">
+    <meta name="DC.Language" content="en">
+
+    <!-- load jQuery -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>   
+    <link rel="stylesheet" type="text/css" media="screen" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+
+    <!-- load Galleria -->
+    <script src="./js/galleria-1.5.7.min.js"></script>
+    <link rel="stylesheet" href="./js/galleria/fullscreen/galleria.fullscreen.min.css">
+    <script src="./js/galleria/fullscreen/galleria.fullscreen.min.js"></script>
+    <!-- <script src="./js/galleria/classic/galleria.classic.min.js"></script> -->
+
+    <link rel="stylesheet" href="./css/pure-min.css">
+    <link rel="stylesheet" href="./css/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="./css/deru.css" />
+
+    <script src="./js/lazysizes.min.js"></script>
+
+    <script src="./js/deru.min.js"></script>
+
+    <link rel="shortcut icon" type="image/jpg" href="./img/favicon_deru.jpg" />
+
+    <title>DERU: The Art of Cooperation</title>
+
+    <style type="text/css">
+        .linecell {
+            background-color: green;
+        }
+
+        .cell {
+            background-color: beige;
+        }
+
+        #galleria_4k {
+            height: 1080px;
+            max-height: 100%;
+        }
+
+        .galleria-theme-classic {
+            background: transparent;
+        }
+
+        .galleria-theme-fullscreen .galleria-info{
+            background-color: transparent !important;
+            border: 0px solid #000 !important;
+            font-family:"Quicksand" !important;
+        }
+    </style>
+    <script>
+        var data = [
+            {
+                title: 'World 1 - Faith',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w1_01.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_01_thumb.png",
+            },
+            {
+                title: 'World 1 - Faith',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w1_02.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_02_thumb.png",
+            },
+            {
+                title: 'World 1 - Faith',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w1_03.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_03_thumb.png",
+            },
+            {
+                title: 'World 1 - Faith',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w1_04.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_04_thumb.png",
+            },
+
+            {
+                title: 'World 2 - Abundance',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w2_01.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_01_thumb.png",
+            },
+            {
+                title: 'World 2 - Abundance',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w2_02.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_02_thumb.png",
+            },
+            {
+                title: 'World 2 - Abundance',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w2_03.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_03_thumb.png",
+            },
+            {
+                title: 'World 2 - Abundance',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w2_04.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_04_thumb.png",
+            },
+
+            {
+                title: 'World 3 - Liberty',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w3_01.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_01_thumb.png",
+            },
+            {
+                title: 'World 3 - Liberty',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w3_02.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_02_thumb.png",
+            },
+            {
+                title: 'World 3 - Liberty',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w3_03.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_03_thumb.png",
+            },
+            {
+                title: 'World 3 - Liberty',
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w3_04.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_04_thumb.png",
+            },
+
+            {
+                title: "World 4 - Dependence",
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w4_01.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_01_thumb.png",
+            },
+            {
+                title: "World 4 - Dependence",
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w4_02.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_02_thumb.png",
+            },
+            {
+                title: "World 4 - Dependence",
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w4_03.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_03_thumb.png",
+            },
+            {
+                title: "World 4 - Dependence",
+                image: "./img/bgs/DERU_Wallpaper_Desktop_4k/4k_w4_04.jpg",
+                thumb: "./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_04_thumb.png",
+            },
+        ];
+    </script>
+
+</head>
+
+
+<body style='text-align: center;'>
+
+    <nav style="position: fixed; top: 0; width: 100%; z-index: 3; background: white;">
+        <div class="pure-menu pure-menu-horizontal" style="text-align: center;">
+            <!-- <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a> -->
+            <ul class="pure-menu-list nav">
+                <li class="pure-menu-item"><a class="pure-menu-link" href="http://inkkit.ch/press/sheet.php?p=deru"
+                        target="_blank">Presskit</a></li>
+                <li class="pure-menu-item">
+                    <a href="/index.html" data-local="#top">
+                        <img class="site_loading" src="img/loading.gif" alt="loading" />
+                        <img class="site_ready" src="img/favicon_deru.jpg" alt="favicon" />
+                    </a>
+                </li>
+                <li class="pure-menu-item pure-menu-selected"><a href="/downloads.html" class="pure-menu-link">Downloads</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="pure-g" style="margin: 0;">
+        <div class="pure-u-md-1-4"></div>
+
+        <main id="top" class="pure-u-1">
+
+
+            <section class="pure-g" style="margin: 0;">
+                <div class="pure-u-1">
+
+                    <div id="galleria_4k" style="margin: auto;">
+
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <!-- <footer id="contact" class="footer">
+            <div class="icon_links">
+                <a class="fa fa-facebook fa-2x" href="https://www.facebook.com/deruGame/" style="width:30px;" target="_blank"></a>
+            </div>
+            <div class="icon_links">
+                <a class="fa fa-envelope fa-2x" href="mailto:contact@inkkit.ch" target="_blank"></a>
+            </div>
+            <div class="icon_links">
+                <a class="fa fa-twitter fa-2x" href="http://twitter.com/derugame" target="_blank"></a>
+            </div>
+            <div class="icon_links">
+                <a class="fa fa-music fa-2x" href="http://www.michelbarengo.com/" target="_blank"></a>
+            </div>
+
+            <span style="display:table-row; height: 100px;"></span>
+
+            <span style="display:table-cell;"></span>
+
+        </footer> -->
+
+
+
+        <div class="pure-u-md-1-4"></div>
+    </div>
+
+    <script>
+        $(function () {
+            // Initialize Galleria
+
+            var options_4k = {
+                // thumbnails: 'lazy',
+                transition: 'fade',
+                imagePosition: 'center',
+                autoplay: 5000,
+                transitionSpeed: 3000,
+                preload: 2,
+                dataSource: data,
+            };
+
+            Galleria.run('#galleria_4k', options_4k );
+
+            // setTimeout(() => {
+            //     Galleria.lazyLoad();
+            // }, 5000)
+        });
+    </script>
+
+</body>
+
+</html>

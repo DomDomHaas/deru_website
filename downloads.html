@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="DERU an atmospheric, cooperative Puzzle Game">
+    <meta property="og:image" content="img/deru_icon.jpg">
+    <meta property="og:description" content="DERU an atmospheric puzzle game which challenges two players to work together and play through many colorful levels.">
+
+    <meta name="author" content="Ink Kit">
+    <meta name="publisher" content="Ink Kit">
+    <meta name="description" content="DERU an atmospheric puzzle game which challenges two players to work together and play through many colorful levels.">
+    <meta name="keywords" content="abstract, deru, puzzle, game, 2D, casual, multiplayer">
+    <meta name="page-topic" content="Game">
+    <meta name="page-type" content="Software">
+    <meta name="audience" content="Anfänger, Azubis, Fans, Fortgeschrittene, Frauen, Jugendliche, Kinder, Männer, Schüler, Studenten">
+    <meta name="robots" content="index, follow">
+    <meta name="DC.Creator" content="Ink Kit">
+    <meta name="DC.Publisher" content="Ink Kit">
+    <meta name="DC.Rights" content="Ink Kit">
+    <meta name="DC.Description" content="DERU an atmospheric puzzle game which challenges two players to work together and play through many colorful levels.">
+    <meta name="DC.Language" content="en">
+
+    <!-- load jQuery -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>   
+    <link rel="stylesheet" type="text/css" media="screen" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+
+    <!-- load Galleria -->
+    <script src="./js/galleria-1.5.7.min.js"></script>
+    <script src="./js/galleria/classic/galleria.classic.min.js"></script>
+
+    <link rel="stylesheet" href="./css/pure-min.css">
+    <link rel="stylesheet" href="./css/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="./css/deru.css" />
+
+    <script src="./js/lazysizes.min.js"></script>
+
+    <script src="./js/deru.min.js"></script>
+
+    <link rel="shortcut icon" type="image/jpg" href="./img/favicon_deru.jpg" />
+
+    <title>DERU: The Art of Cooperation</title>
+
+    <style type="text/css">
+        .linecell {
+            background-color: green;
+        }
+
+        .cell {
+            background-color: beige;
+        }
+
+        /* This rule is read by Galleria to define the gallery height: */
+        #galleria_mobile {
+            height: 500px; width: 240px;
+        }
+
+        #galleria_desktop {
+            height: 420px;
+        }
+
+        .galleria-theme-classic {
+            background: transparent;
+        }
+    </style>
+
+
+</head>
+
+
+<body style='background-image: url(./img/ZenBG.jpg); background-repeat: repeat; text-align: center;'>
+
+    <nav style="position: fixed; top: 0; width: 100%; z-index: 3; background: white;">
+        <div class="pure-menu pure-menu-horizontal" style="text-align: center;">
+            <!-- <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a> -->
+            <ul class="pure-menu-list nav">
+                <li class="pure-menu-item"><a class="pure-menu-link" href="http://inkkit.ch/press/sheet.php?p=deru"
+                        target="_blank">Presskit</a></li>
+                <li class="pure-menu-item">
+                    <a href="/index.html" data-local="#top">
+                        <img class="site_loading" src="img/loading.gif" alt="loading" />
+                        <img class="site_ready" src="img/favicon_deru.jpg" alt="favicon" />
+                    </a>
+                </li>
+                <li class="pure-menu-item pure-menu-selected"><a href="/downloads.html" class="pure-menu-link">Downloads</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="pure-g">
+        <div class="pure-u-md-1-4"></div>
+
+        <main id="top" class="pure-u-1 pure-u-md-1-2">
+
+
+            <section class="pure-g">
+                <div class="pure-u-1">
+
+                    <div id="galleria_mobile" style="margin: auto;">
+
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w1_04.jpg">
+                        </a>
+
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w2_04.jpg">
+                        </a>
+
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w3_04.jpg">
+                        </a>
+
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Mobile_750x1334/Mobile_w4_04.jpg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h2>Download<br/>the amazing backgrounds<br/>of DERU<br/>for your mobile</h2>
+                </div>
+            </div>
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h4><a class="pure-button pure-button-active" href="./img/bgs/DERU_Wallpaper_Mobile_750x1334.zip">Download Mobile 750 x 1334</a></h4>
+                </div>
+            </div>
+            <div class="pure-g">
+                    <div class="pure-u-1">
+                    <h4><a class="pure-button pure-button-active" href="./img/bgs/DERU_Wallpaper_Mobile_1080x1920.zip">Download Mobile 1080 x 1920</a></h4>
+                </div>
+            </div>
+
+
+            <br />
+            <br />
+
+            <section class="pure-g">
+                <div class="pure-u-1">
+
+                    <div id="galleria_desktop" style="margin: auto;">
+
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w1_04.jpg">
+                        </a>
+
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w2_04.jpg">
+                        </a>
+
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w3_04.jpg">
+                        </a>
+
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_01.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_01.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_02.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_02.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_03.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_03.jpg">
+                        </a>
+                        <a href="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_04.jpg">
+                            <img src="./img/bgs/DERU_Wallpaper_Desktop_HD/HD_w4_04.jpg">
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h2>Download<br/>the amazing backgrounds<br/>of DERU<br/>for your desktop</h2>
+                </div>
+            </div>
+
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h4><a class="pure-button pure-button-active" href="./img/bgs/DERU_Wallpaper_Desktop_HD.zip">Download Desktop 1080 x 1920</a></h4>
+                </div>
+            </div>
+            <div class="pure-g">
+                    <div class="pure-u-1">
+                        <h4><a class="pure-button pure-button-active" href="./img/bgs/DERU_Wallpaper_Desktop_4k.zip">Download Desktop 4K</a></h4>
+                    </div>
+            </div>
+
+
+            <br />
+            <br />
+
+            
+            <!-- <div class="pure-g">
+                <div class="pure-u-1">
+                    <h2>Get the animated Wallpapers for<br/>the Wallpaper engine</h2>
+                </div>
+            </div>
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h4><a class="pure-button pure-button-active"
+                        href="https://store.steampowered.com/itemstore/431960/browse/?searchtext=deru&filter=Featured"
+                        target="_blank">Get Animated Wallpapers via Wallpaper engine</a></h4>
+                </div>
+            </div> 
+
+            
+
+            <div class="pure-g ">
+                <div class="pure-u-1 widget">
+                    <iframe src="http://store.steampowered.com/widget/431960/" frameborder="0" width="630" height="200"></iframe>
+                </div>
+            </div> -->
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h2>If you like the backgrounds please support us<br/>and download DERU on these Platforms</h2>
+                </div>
+            </div>
+
+            <div class="pure-g ">
+                <div class="pure-u-1 widget">
+                    <iframe src="http://store.steampowered.com/widget/632250/" frameborder="0" width="630" height="200"></iframe>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="pure-g">
+                <div class="pure-u-1 widget">
+                    <a href="https://www.nintendo.com/games/detail/deru-the-art-of-cooperation-switch" target="_blank">
+                        <!-- <img width="440" height="440" src="https://media.giphy.com/media/3ohhwtOxeATyTezCak/giphy.gif"/> -->
+                        <img width="630" src="./img/NintendoSwitch_Long.jpg" />
+                    </a>
+
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="pure-g itch">
+                <div class="pure-u-1 widget">
+                    <iframe src="https://itch.io/embed/102790?dark=true" width="630" height="200" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <h2>Contacts</h2>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="contact" class="footer">
+            <div class="icon_links">
+                <a class="fa fa-facebook fa-2x" href="https://www.facebook.com/deruGame/" style="width:30px;" target="_blank"></a>
+            </div>
+            <div class="icon_links">
+                <a class="fa fa-envelope fa-2x" href="mailto:contact@inkkit.ch" target="_blank"></a>
+            </div>
+            <div class="icon_links">
+                <a class="fa fa-twitter fa-2x" href="http://twitter.com/derugame" target="_blank"></a>
+            </div>
+            <div class="icon_links">
+                <a class="fa fa-music fa-2x" href="http://www.michelbarengo.com/" target="_blank"></a>
+            </div>
+
+            <span style="display:table-row; height: 100px;"></span>
+
+            <span style="display:table-cell;"></span>
+
+
+
+            <!--
+        <div class="inkkit_logo">
+            <a href="http://www.inkkit.ch" target="_blank"><img data-src="img/256_ink_kit_logo.jpg" class="lazyload" /></a>
+        </div>
+
+        <div class="whales_logo">
+            <a href="http://www.misterwhale.ch" target="_blank"><img data-src="img/whales_logo.jpg" class="lazyload" /></a>
+        </div>
+        -->
+        </footer>
+
+
+
+        <div class="pure-u-md-1-4"></div>
+    </div>
+
+    <script>
+        $(function () {
+            // Initialize Galleria
+
+            var mobile_options = {
+                transition: 'fade',
+                imagePosition: 'center',
+                autoplay: 3000,
+                preload: 2,
+            };
+
+            var desktop_options = {
+                transition: 'fade',
+                imagePosition: 'center',
+                lightbox: true,
+                autoplay: 3000,
+                preload: 2,
+            };
+
+            Galleria.run('#galleria_mobile', mobile_options);
+            Galleria.run('#galleria_desktop', desktop_options);
+        });
+    </script>
+
+</body>
+
+</html>
