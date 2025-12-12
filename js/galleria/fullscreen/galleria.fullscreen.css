@@ -1,6 +1,6 @@
 /**
  * Galleria Classic Theme 2017-02-27
- * http://galleria.io
+ * https://galleria.io
  *
  * Copyright (c) 2010 - 2017 worse is better UG
  * Licensed 2017-02-27 under the MIT license
